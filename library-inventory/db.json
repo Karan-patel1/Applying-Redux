@@ -1,0 +1,51 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "isbn": "9780132350884",
+      "genre": "Non-Fiction",
+      "available": false,
+      "borrower": "karran",
+      "createdAt": 1724300000000
+    },
+    {
+      "id": "3",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "isbn": "9780590353427",
+      "genre": "Fiction",
+      "available": true,
+      "borrower": "",
+      "createdAt": 1724300200000
+    },
+    {
+      "id": "1166",
+      "title": "hhh",
+      "author": "meer",
+      "isbn": "9033227627222",
+      "genre": "Fiction",
+      "available": true,
+      "borrower": ""
+    },
+    {
+      "id": "be63",
+      "title": "mere",
+      "author": "meer",
+      "isbn": "9033227627222",
+      "genre": "Fiction",
+      "available": true,
+      "borrower": ""
+    },
+    {
+      "id": "2312",
+      "title": "vfdvvv",
+      "author": "ggfvv",
+      "isbn": "000000000000000",
+      "genre": "Non-Fiction",
+      "available": true,
+      "borrower": ""
+    }
+  ]
+}

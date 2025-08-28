@@ -1,0 +1,54 @@
+:root{ --bg:#0b1020; --card:#111935; --text:#f4f6ff; --muted:#aab4d4; --accent:#5b8cff; --danger:#ff6161; --warn:#f9c74f; --ok:#42d392; }
+*{ box-sizing:border-box; }
+body{ margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text); }
+.container{ max-width:1100px; margin:0 auto; padding:24px; }
+.app-header{ display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; }
+.app-header a{ color:var(--muted); margin-left:12px; text-decoration:none; }
+.app-header a.active{ color:var(--text); }
+
+
+.stack{ display:grid; gap:16px; }
+
+
+.card{ background:var(--card); border:1px solid #1e2a55; padding:16px; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,.2); }
+.grid{ display:grid; gap:12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); align-items:end; }
+.row{ display:flex; gap:12px; align-items:center; }
+.row.end{ justify-content:flex-end; }
+
+
+input, select, button{ width:100%; padding:10px 12px; border-radius:12px; border:1px solid #2b3a78; background:#0f1733; color:var(--text); }
+button{ cursor:pointer; }
+button.primary{ background:var(--accent); border-color:transparent; }
+button.danger{ background:var(--danger); border-color:transparent; }
+button:disabled{ opacity:.6; cursor:not-allowed; }
+
+
+.table{ width:100%; border-collapse:collapse; }
+.table th, .table td{ text-align:left; padding:12px; border-bottom:1px solid #223169; }
+.row-actions{ display:flex; gap:8px; }
+
+
+.error{ color:#ff8585; }
+
+
+.summary{ display:flex; gap:12px; }
+.pill{ background:#0f1733; border:1px solid #2b3a78; padding:8px 12px; border-radius:999px; }
+.tag{ padding:4px 8px; border-radius:999px; font-size:.9rem; }
+.tag.success{ background:#143a2e; border:1px solid #2e7d68; }
+.tag.warn{ background:#3a2d14; border:1px solid #a1822b; }
+
+
+.filterbar input{ flex:1; }
+.filterbar{ display:grid; grid-template-columns: 1.5fr repeat(4, minmax(140px, .6fr)); gap:12px; align-items:center; }
+
+
+.pagination{ display:flex; justify-content:center; align-items:center; gap:12px; margin-top:12px; }
+
+
+/* Modal */
+.modal-backdrop{ position:fixed; inset:0; background:rgba(0,0,0,.45); display:grid; place-items:center; }
+.modal{ width:min(680px, 94vw); background:var(--card); padding:20px; border-radius:20px; border:1px solid #1e2a55; box-shadow:0 10px 40px rgba(0,0,0,.4); }
+
+
+.link{ color:var(--accent); text-decoration:none; }
+.switch{ display:flex; align-items:center; gap:8px; }
